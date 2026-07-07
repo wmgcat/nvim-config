@@ -1,0 +1,40 @@
+{
+	"React.Component": {
+		"prefix": "basic-component",
+		"body": [
+			"/**",
+			" * ${2:Description}",
+			" *",
+			" * @example",
+			" * <${1:Component} />",
+			"*/",
+			"const ${1:Component}: React.FC = () => {",
+			"	return (",
+			"		${3:}",
+			"	);",
+			"};",
+			"",
+			"export default ${1:Component};$0"
+		],
+		"description": "Basic component for React"
+	},
+	"React.Function": {
+		"prefix": "basic-function",
+		"body": [
+			"/**",
+			" * ${2:Description}",
+			" *",
+			" * @example",
+			" * <${1:Function} />",
+			"*/",
+			"function ${1:Function}() {",
+			"	return (",
+			"		${3:}",
+			"	);",
+			"}",
+			"",
+			"export default ${1:Function};$0"
+		],
+		"description": "Basic function for React"
+	}
+}

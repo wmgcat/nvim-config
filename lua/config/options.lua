@@ -1,0 +1,7 @@
+vim.o.number = true
+vim.o.cursorline = true
+vim.o.wrap = false
+vim.o.incsearch = true
+vim.o.tabstop = 2
+vim.o.shiftwidth = 2
+vim.o.smarttab = true
