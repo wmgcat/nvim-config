@@ -8,9 +8,10 @@ return {
 			"hrsh7th/cmp-buffer",
 			"hrsh7th/cmp-path",
 			"folke/lazydev.nvim",
-			"saadparwaiz1/cmp_luasnip"
+			"saadparwaiz1/cmp_luasnip",
+			"roobert/tailwindcss-colorizer-cmp.nvim"
 		},
-		opts = function()
+		opts = function(_, opts)
 			vim.lsp.config("*", { capabilities = require("cmp_nvim_lsp").default_capabilities() })
 			vim.api.nvim_set_hl(0, "CmpGhostText", { link = "Comment", default = true })
 
@@ -18,6 +19,7 @@ return {
 			local luasnip = require("luasnip")
 			local defaults = require("cmp.config.default")()
 			local auto_select = true
+
 			return {
 				snippet = {
 					expand = function(args)
@@ -63,7 +65,7 @@ return {
 							end
 						end
 
-						return item
+						return require("tailwindcss-colorizer-cmp").formatter(entry, item)
 					end
 				},
 				experimental = {

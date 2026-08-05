@@ -44,6 +44,12 @@ return {
 					},
 					shortcut = {
 					},
+					project = {
+						enable = false
+					},
+					mru = {
+						enable = false
+					},
 					packages = {
 						enable = false
 					},

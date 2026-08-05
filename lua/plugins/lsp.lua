@@ -1,4 +1,9 @@
 return {
+	{
+		"b0o/SchemaStore.nvim",
+		lazy = true,
+		version = false
+	},
   {
 		"neovim/nvim-lspconfig",
 		event = "VeryLazy",
@@ -7,7 +12,9 @@ return {
 				"ts_ls",
 				"html",
 				"cssls",
-				"tailwindcss"
+				"tailwindcss",
+				"json",
+				"yaml"
 	  	})
 		end
   }
