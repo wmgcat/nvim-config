@@ -5,3 +5,5 @@ vim.o.incsearch = true
 vim.o.tabstop = 2
 vim.o.shiftwidth = 2
 vim.o.smarttab = true
+vim.opt.expandtab = false
+vim.opt.softtabstop = 2
